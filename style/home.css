@@ -21,7 +21,7 @@ a:hover {text-decoration: none;}
 /* ------------------------------------Html-Body------------------------------- */
 /* ---------------------------------------------------------------------------- */
 
-body {background: #E7E7E7;
+body {background: #F9F9F9;
       color: #3F3F3F;
       font: 14px/25px Arial, Helvetica, sans-serif;
       font-family: Montserrat, sans-serif;
@@ -64,11 +64,18 @@ body {background: #E7E7E7;
 	margin-top: 30px;	
 }
 .logo span{
-  font-size: 30px;margin-bottom: 10px;letter-spacing: 1px;}
+  font-size: 30px;margin-bottom: 10px;letter-spacing: 1px;
+}
+
+@media all and (max-width: 768px){
+  header .logo{text-align:center;width: 100%;}
+  header .logo img{display:block;}
+}
 
 /* ---------------------------------------------------------------------------- */
 /* -------------------------------Menu---------------------------------- */
 /* ---------------------------------------------------------------------------- */
+
 #cssmenu {
   width: 400px;
   height: 200px;
@@ -213,8 +220,14 @@ article .art-content{}
 }
 
 .item-container:hover .item-caption {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, .75);
 }
 .item-container:hover .item-caption h3, .item-container:hover .item-caption span{
   display: block;
 }
+/* ---------------------------------------------------------------------------- */
+/* -------------------------------------Footer--------------------------------- */
+/* ---------------------------------------------------------------------------- */
+footer{margin-top: 40px;}
+footer .wrap-footer{color: #666;font-size: 13px;padding: 40px 20px;}
+footer .wrap-footer h3{margin-bottom: 10px;}
